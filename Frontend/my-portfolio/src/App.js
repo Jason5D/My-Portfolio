@@ -1,14 +1,15 @@
 import "./styles/index.css";
-import Introduction from "./Introduction.js";
+import Introduction from "./components/Introduction.js";
+import Contact from "./components/Contact.js";
+import Navbar from "./components/Navbar.js";
 
 function App() {
   return (
-    <section>
-      <header className="App-header">
-        <h1>My Portfolio</h1>
+    <div>
+        <Navbar />
         <Introduction />
-      </header>
-    </section>
+        <Contact />
+    </div>
   );
 }
 
