@@ -1,7 +1,7 @@
 export default function Introduction() {
   return (
     <div>
-    <p>Hi, my name is Jason Donoghue.</p>
+      <p>Hi, my name is Jason Donoghue.</p>
 
       <p>I have learnt how to create websites and digital experiences</p>
 
@@ -12,6 +12,6 @@ export default function Introduction() {
         engineering, into software development, and have a keen interest in
         machine learning and data.
       </p>
-      </div>
-  )
+    </div>
+  );
 }
