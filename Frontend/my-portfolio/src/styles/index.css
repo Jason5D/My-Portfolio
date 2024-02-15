@@ -48,6 +48,18 @@ a:hover {
 .section-plum {
   background-color: var(--plum);
 }
+.section-dkblue {
+  background-color: var(--dkblue);
+}
+
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 23, 228, 1) 0%,
+    rgba(134, 251, 251, 1) 100%
+  );
+  height: 2px;
+}
 
 /* Navbar */
 
@@ -158,4 +170,22 @@ nav [class*="fa-"]:hover {
 
 #contact p:last-child {
   margin-top: 3rem;
+}
+
+/* Footer section */
+
+footer {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 3rem;
 }
