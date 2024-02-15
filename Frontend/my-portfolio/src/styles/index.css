@@ -43,18 +43,10 @@ a:hover {
   text-decoration: none;
 }
 
-#contact {
+/* background color divs */
+
+.section-plum {
   background-color: var(--plum);
-  text-align: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-right: 5%;
-  padding-left: 5%;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-#contact p:last-child {
-  margin-top: 3rem;
 }
 
 /* Navbar */
@@ -99,10 +91,16 @@ nav a:hover,
 nav [class*="fa-"]:hover {
   color: var(--magenta);
 }
+
+/* Button style */
+
 .button {
   background-color: var(--magenta);
+  color: var(--white);
   padding: 0.5rem;
   border-radius: 5px;
+  font-family: var(--mono);
+  text-decoration: none;
 }
 .button:hover {
   color: var(--white);
@@ -121,4 +119,43 @@ nav [class*="fa-"]:hover {
     text-align: left;
     margin-right: auto;
   }
+}
+
+/* Intro styles */
+
+#intro {
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#intro .name {
+  font-family: var(--mono);
+  font-size: 1rem;
+}
+
+.name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--aqua);
+  display: block;
+  font-weight: 300;
+}
+
+/* Contact section */
+
+#contact {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+#contact p:last-child {
+  margin-top: 3rem;
 }
