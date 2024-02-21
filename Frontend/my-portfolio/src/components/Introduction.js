@@ -1,5 +1,3 @@
-import Counters from "./Counters.js";
-
 export default function Introduction() {
   return (
     <section id="intro">
@@ -17,7 +15,6 @@ export default function Introduction() {
         machine learning and data. Check out my{" "}
         <a href="https://github.com/Jason5D">Github profile</a>
       </p>
-      <Counters />
     </section>
   );
 }
