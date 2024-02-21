@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const Counters = () => {
   const [activated, setActivated] = useState(false);
@@ -9,10 +9,17 @@ const Counters = () => {
       const container = document.querySelector(".counters");
       const pageYOffset = window.pageYOffset;
 
-      if (pageYOffset > container.offsetTop - window.innerHeight && !activated) {
+      if (
+        pageYOffset > container.offsetTop - window.innerHeight &&
+        !activated
+      ) {
         setCounters(document.querySelectorAll(".counters span"));
         setActivated(true);
-      } else if ((pageYOffset < container.offsetTop - window.innerHeight || pageYOffset === 0) && activated) {
+      } else if (
+        (pageYOffset < container.offsetTop - window.innerHeight ||
+          pageYOffset === 0) &&
+        activated
+      ) {
         setCounters([]);
         setActivated(false);
       }
@@ -27,7 +34,7 @@ const Counters = () => {
 
   useEffect(() => {
     if (activated) {
-      counters.forEach(counter => {
+      counters.forEach((counter) => {
         const target = parseInt(counter.dataset.count);
         let count = 0;
 
@@ -35,7 +42,7 @@ const Counters = () => {
           if (count < target) {
             count++;
             counter.innerText = count;
-            setTimeout(updateCount, 50); // Adjust the timeout duration for slower increment
+            setTimeout(updateCount, 100); // Adjust the timeout duration for slower increment
           }
         };
 
@@ -45,37 +52,34 @@ const Counters = () => {
   }, [activated, counters]);
 
   return (
-    <>
-      <h1 className="scroll">Scroll To Activate</h1>
-      <div className="counters">
-        <div>
-          <div className="counter">
-            <h1>
-              <span data-count="156">156</span>
-            </h1>
-            <h3>Projects Completed</h3>
-          </div>
-          <div className="counter">
-            <h1>
-              <span data-count="227">227</span>
-            </h1>
-            <h3>Satisfied Clients</h3>
-          </div>
-          <div className="counter">
-            <h1>
-              <span data-count="91">91</span>
-            </h1>
-            <h3>Success Rate</h3>
-          </div>
-          <div className="counter">
-            <h1>
-              <span data-count="30">30</span>
-            </h1>
-            <h3>Years Experience</h3>
-          </div>
+    <div className="counters">
+      <div>
+        <div className="counter">
+          <h1>
+            <span data-count="12">12</span>
+          </h1>
+          <h3>Meetups</h3>
+        </div>
+        <div className="counter">
+          <h1>
+            <span data-count="15">15</span>
+          </h1>
+          <h3>Hackathons</h3>
+        </div>
+        <div className="counter">
+          <h1>
+            <span data-count="20">20</span>
+          </h1>
+          <h3>Projects</h3>
+        </div>
+        <div className="counter">
+          <h1>
+            <span data-count="30">30</span>
+          </h1>
+          <h3>Collaborations</h3>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -166,15 +166,15 @@ nav [class*="fa-"]:hover {
 }
 
 /* Counters */
-.scroll {
-  min-height: 40rem;
-}
-
 .counters {
   padding: 3rem 2rem;
-  background: #4193ff;
-  color: #fff;
+  color: var(--aqua);
   text-align: center;
+  font-family: var(--mono);
+}
+
+.counters span {
+  color: var(--magenta)
 }
 
 .counters > div {
@@ -196,7 +196,7 @@ nav [class*="fa-"]:hover {
 
 .counter:not(:last-child)::before {
   content: '';
-  background: #fff;
+  background: var(--hotmag);
   position: absolute;
   width: 0.2rem;
   height: 3rem;
