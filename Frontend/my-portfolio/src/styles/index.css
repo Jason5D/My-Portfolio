@@ -142,7 +142,7 @@ nav [class*="fa-"]:hover {
 /* Intro styles */
 
 #intro {
-  padding: 4rem 1rem 10rem 1rem;
+  padding: 4rem 1rem 4rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -164,6 +164,96 @@ nav [class*="fa-"]:hover {
   display: block;
   font-weight: 300;
 }
+
+/* Counters */
+.counters {
+  padding: 3rem 2rem;
+  color: var(--aqua);
+  text-align: center;
+  font-family: var(--mono);
+}
+
+.counters span {
+  color: var(--magenta)
+}
+
+.counters > div {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem 2rem;
+}
+
+.counter {
+  position: relative;
+}
+
+.counter h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.counter:not(:last-child)::before {
+  content: '';
+  background: var(--hotmag);
+  position: absolute;
+  width: 0.2rem;
+  height: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -1rem;
+}
+
+@media screen and (max-width: 900px) and (min-width: 501px) {
+  .counters > div {
+    grid-template-columns: 1fr 1fr;
+  }
+  .counter:nth-child(2)::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .counters > div {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+  .counter:not(:last-child)::before {
+    width: 90%;
+    height: 2px;
+    top: initial;
+    right: initial;
+    bottom: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+
+/* .counters { */
+  /* display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; 
+  align-items: center;
+  font-family: var(--mono);
+  color: var(--aqua); */
+/* } */
+
+/* .meetups {
+  text-align: center;
+}
+
+.hackathons {
+  text-align: center;
+}
+
+.counters span {
+  font-size: 4rem;
+} */
+
+
 
 /* Projects section */
 
@@ -213,11 +303,15 @@ nav [class*="fa-"]:hover {
   padding: 1rem;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 800px) {
   article {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 1rem;
+  }
+  #projects {
+    max-width: 1200px;
+    margin: 0 auto;
   }
   #projects img {
     grid-column: 1/6;
@@ -231,6 +325,18 @@ nav [class*="fa-"]:hover {
   }
   #projects ul {
     justify-content: flex-end;
+  }
+  #projects .reverse .text {
+    grid-column: 1/7;
+    order: 2;
+    text-align: left;
+  }
+  #projects .reverse img {
+    grid-column: 6/11;
+    grid-row: 1/2;
+  }
+  #projects .reverse ul {
+    justify-content: flex-start;
   }
 }
 
