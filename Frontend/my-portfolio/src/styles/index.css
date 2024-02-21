@@ -142,7 +142,7 @@ nav [class*="fa-"]:hover {
 /* Intro styles */
 
 #intro {
-  padding: 4rem 1rem 10rem 1rem;
+  padding: 4rem 1rem 4rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -164,6 +164,33 @@ nav [class*="fa-"]:hover {
   display: block;
   font-weight: 300;
 }
+
+/* Counters */
+
+.counters {
+  margin-top: 4rem;
+  margin-bottom: 0;;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; 
+  align-items: center;
+  font-family: var(--mono);
+  color: var(--aqua);
+}
+
+.meetups {
+  text-align: center;
+}
+
+.hackathons {
+  text-align: center;
+}
+
+.counters span {
+  font-size: 4rem;
+}
+
+
 
 /* Projects section */
 
@@ -213,11 +240,15 @@ nav [class*="fa-"]:hover {
   padding: 1rem;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 800px) {
   article {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 1rem;
+  }
+  #projects {
+    max-width: 1200px;
+    margin: 0 auto;
   }
   #projects img {
     grid-column: 1/6;
