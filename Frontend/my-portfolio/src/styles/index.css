@@ -370,3 +370,41 @@ footer ul {
   gap: 3rem;
   font-size: 3rem;
 }
+
+/* Style the contact form so it is in a similar style to the About page */
+
+/* Path: Frontend/my-portfolio/src/styles/contact.css */
+form {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--aqua);
+}
+
+input[type="submit"] {
+  background-color: var(--magenta);
+  color: var(--white);
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: var(--mono);
+  text-decoration: none;
+  width: 100%;
+  font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+  color: var(--white);
+  background-color: var(--hotmag);
+}
+
+

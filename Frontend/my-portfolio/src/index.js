@@ -7,16 +7,21 @@ import Navbar from "./components/Navbar.js";
 
 import App from "./App.js";
 import About from "./About.js";
+import Footer from "./components/Footer.js";
+import ContactMe from "./ContactMe.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
-      <Navbar /> {/* Render Navbar component */}
-      <Routes> {/* Use Routes as the parent container */}
-        <Route exact path="/" element={<App />} /> {/* Use 'element' prop instead of 'component' */}
-        <Route path="/about" element={<About />} /> {/* Use 'element' prop instead of 'component' */}
+      <Navbar /> 
+      <div class="gradient"></div>
+      <Routes> 
+        <Route exact path="/" element={<App />} /> 
+        <Route path="/about" element={<About />} /> 
+        <Route path="/contact" element={<ContactMe />} />
       </Routes>
-    </Router>
+      <div class="gradient"></div>
+      <Footer />     </Router>
   </React.StrictMode>
 );

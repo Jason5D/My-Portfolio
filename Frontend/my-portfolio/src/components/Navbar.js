@@ -19,7 +19,7 @@ export default function Navbar() {
           <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+         <Link to="/contact">Contact</Link> 
         </li>
         <li>
           <a href="https://linkedin.com/in/jason-donoghue-3765a6267">

@@ -6,10 +6,8 @@ import Footer from "./components/Footer.js";
 export default function About() {
   return (
     <div>
-      {/* <Navbar /> */}
       <AboutMe />
       <Contact />
-      <Footer />
     </div>
   );
 }

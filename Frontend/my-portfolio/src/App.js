@@ -19,7 +19,7 @@ function App() {
       <div class="gradient"></div>
       <Contact />
       <div class="gradient"></div>
-      <Footer />
+    
     </div>
   );
 }
