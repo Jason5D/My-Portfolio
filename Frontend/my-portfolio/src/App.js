@@ -1,6 +1,4 @@
 
-
-import "./styles/index.css";
 import Introduction from "./components/Introduction.js";
 import Contact from "./components/Contact.js";
 import Navbar from "./components/Navbar.js";
