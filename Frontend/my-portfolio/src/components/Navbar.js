@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -19,31 +19,28 @@ export default function Navbar() {
           <Link to="/about">About</Link>
         </li>
         <li>
-         <Link to="/contact">Contact</Link> 
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <a href="https://linkedin.com/in/jason-donoghue-3765a6267">
+          <a
+            href="https://linkedin.com/in/jason-donoghue-3765a6267"
+            target="_blank"
+            rel="noreferrer"
+          >
             <span className="fa-brands fa-linkedin" aria-hidden="true"></span>
             <span className="sr-only">LinkenIn</span>
           </a>
         </li>
         <li>
-          <a href="https://github.com/Jason5D">
+          <a href="https://github.com/Jason5D" target="_blank" rel="noreferrer">
             <span className="fa-brands fa-github" aria-hidden="true"></span>
             <span className="sr-only">Github</span>
           </a>
         </li>
         <li>
-          <a
-            href="/Users/jason5d/Library/Mobile Documents/com~apple~CloudDocs/CVs/Jason Donoghue CV C.docx"
-            className="button"
-          >
-            Resume
-          </a>
+            <Link to="/resume" className="button">Resume</Link>
         </li>
       </ul>
     </nav>
   );
 }
-
-
