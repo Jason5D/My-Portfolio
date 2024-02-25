@@ -16,14 +16,14 @@ root.render(
   <React.StrictMode>
     <Router>
       <Navbar />
-      <div class="gradient"></div>
+      <div className="gradient"></div>
       <Routes>
         <Route exact path="/" element={<App />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
       </Routes>
-      <div class="gradient"></div>
+      <div className="gradient"></div>
       <Footer />{" "}
     </Router>
   </React.StrictMode>

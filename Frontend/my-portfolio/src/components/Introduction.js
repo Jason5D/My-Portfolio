@@ -1,7 +1,9 @@
+import "../styles/Introduction.css";
+
 const Introduction = () => {
   return (
     <section id="intro">
-      <p class="name">
+      <p className="name">
         Hi, my name is <span>Jason Donoghue.</span>
       </p>
 

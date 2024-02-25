@@ -1,4 +1,4 @@
-// Import necessary modules
+import "../styles/ContactForm.css"
 import React, { useState } from "react";
 import axios from "axios";
 
@@ -30,13 +30,14 @@ const ContactForm = () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <h3>Contact me for questions or opportunities...</h3>
+        <div className="name">
           <label htmlFor="name">Name</label>
           <input
             type="text"
             className="form-control"
             id="name"
-            placeholder="Enter your name"
+           
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
@@ -47,7 +48,7 @@ const ContactForm = () => {
             type="email"
             className="form-control"
             id="email"
-            placeholder="Enter your email"
+            
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -62,8 +63,8 @@ const ContactForm = () => {
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-primary">
-          Submit
+        <button type="submit" className="button">
+          Send
         </button>
       </form>
     </div>

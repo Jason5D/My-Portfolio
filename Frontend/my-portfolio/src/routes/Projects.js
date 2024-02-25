@@ -1,13 +1,15 @@
+import "../styles/Projects.css";
+
 const Projects = () => {
   return (
-    <div class="section-dkblue">
+    <div className="section-dkblue">
       <section id="projects">
         <h2>Projects I'm proud of</h2>
         <article>
-          <div class="text">
+          <div className="text">
             <h4>Latest Project</h4>
             <h3>Studyosaurus</h3>
-            <p class="blackbox">
+            <p className="blackbox">
               Description of the project. This should be faily concise while
               also describing the key components that you developed or worked
               on. It can be as long as you need it to be but should at least be
@@ -27,11 +29,11 @@ const Projects = () => {
             alt="Man on a beach"
           />
         </article>
-        <article class="reverse">
-          <div class="text">
+        <article className="reverse">
+          <div className="text">
             <h4>Latest Project</h4>
             <h3>Studyosaurus</h3>
-            <p class="blackbox">
+            <p className="blackbox">
               Description of the project. This should be faily concise while
               also describing the key components that you developed or worked
               on. It can be as long as you need it to be but should at least be

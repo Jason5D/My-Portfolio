@@ -1,3 +1,4 @@
+import "../styles/Counters.css";
 import React, { useState, useEffect } from "react";
 
 const Counters = () => {

@@ -15,7 +15,7 @@ const Resume = () => {
       <button onClick={openPDF} className="download">
         Download CV
       </button>
-      <div class="gradient"></div>
+      <div className="gradient"></div>
       <ResumeViewer />
     </div>
   );

@@ -1,0 +1,19 @@
+form {
+  margin: 0;
+  background-color: var(--plum);
+  font-family: var(--mono);
+  color: var(--white);
+}
+
+form h3 {
+  margin-top: 2rem;
+  color: var(--aqua)
+}
+
+form button {
+  margin-bottom: 2rem;
+}
+
+.form-control {
+  background-color: var(--white);
+}
