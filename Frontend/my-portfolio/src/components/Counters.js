@@ -1,82 +1,61 @@
+import "../styles/Counters.css";
 import React, { useState, useEffect } from "react";
 
 const Counters = () => {
-  const [activated, setActivated] = useState(false);
-  const [counters, setCounters] = useState([]);
+  const [state, setState] = useState({ activated: false, counters: [] });
 
   useEffect(() => {
     const handleScroll = () => {
       const container = document.querySelector(".counters");
       const pageYOffset = window.pageYOffset;
+      const shouldBeActivated =
+        pageYOffset > container.offsetTop - window.innerHeight;
 
-      if (
-        pageYOffset > container.offsetTop - window.innerHeight &&
-        !activated
-      ) {
-        setCounters(document.querySelectorAll(".counters span"));
-        setActivated(true);
-      } else if (
-        (pageYOffset < container.offsetTop - window.innerHeight ||
-          pageYOffset === 0) &&
-        activated
-      ) {
-        setCounters([]);
-        setActivated(false);
+      if (shouldBeActivated && !state.activated) {
+        const counters = document.querySelectorAll(".counters span");
+        counters.forEach((counter) => {
+          const target = +counter.dataset.count; // '+' is a shorter way to convert string to number
+          let count = 0;
+
+          const updateCount = () => {
+            if (count < target) {
+              count++;
+              counter.innerText = count;
+              setTimeout(updateCount, 200);
+            }
+          };
+
+          updateCount();
+        });
+
+        setState({ activated: true, counters });
+      } else if (!shouldBeActivated && state.activated) {
+        setState({ activated: false, counters: [] });
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [activated]);
-
-  useEffect(() => {
-    if (activated) {
-      counters.forEach((counter) => {
-        const target = parseInt(counter.dataset.count);
-        let count = 0;
-
-        const updateCount = () => {
-          if (count < target) {
-            count++;
-            counter.innerText = count;
-            setTimeout(updateCount, 100); // Adjust the timeout duration for slower increment
-          }
-        };
-
-        updateCount();
-      });
-    }
-  }, [activated, counters]);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [state.activated]); // Dependency array now only needs state.activated
 
   return (
     <div className="counters">
       <div>
         <div className="counter">
-          <h1>
-            <span data-count="12">12</span>
-          </h1>
+          <h1><span data-count="6">6</span></h1>
           <h3>Meetups</h3>
         </div>
         <div className="counter">
-          <h1>
-            <span data-count="15">15</span>
-          </h1>
+          <h1><span data-count="2">2</span></h1>
           <h3>Hackathons</h3>
         </div>
         <div className="counter">
-          <h1>
-            <span data-count="20">20</span>
-          </h1>
+          <h1><span data-count="2">2</span></h1>
           <h3>Projects</h3>
         </div>
         <div className="counter">
-          <h1>
-            <span data-count="30">30</span>
-          </h1>
-          <h3>Collaborations</h3>
+          <h1><span data-count="1">1</span></h1>
+          <h3>Deployed</h3>
         </div>
       </div>
     </div>

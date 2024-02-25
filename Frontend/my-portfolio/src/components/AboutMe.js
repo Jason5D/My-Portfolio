@@ -1,16 +1,16 @@
 import myface from "../content/myface.jpeg";
 import mycat from "../content/mycat.jpeg";
 
-export default function AboutMe() {
+const AboutMe =() => {
   return (
-    <div class="section-dkblue">
+    <div className="section-dkblue">
       <section id="projects">
         <h2>Jason Donoghue</h2>
         <article>
-          <div class="text">
+          <div className="text">
             <h4>Just the Highlights</h4>
             <h3>Studyosaurus</h3>
-            <p class="blackbox">
+            <p className="blackbox">
               Proficient junior software engineer with experience of designing
               developing and implementing software applications. Utilising
               Javascript and Python to write wes With a strong background in
@@ -37,8 +37,8 @@ export default function AboutMe() {
             alt="My face"
           />
         </article>
-        <article class="reverse">
-          <div class="text">
+        <article className="reverse">
+          <div className="text">
             <h4>My about me</h4>
             <h3>My Cat</h3>
             <p class="blackbox">
@@ -62,3 +62,5 @@ export default function AboutMe() {
     </div>
   );
 }
+
+export default AboutMe;

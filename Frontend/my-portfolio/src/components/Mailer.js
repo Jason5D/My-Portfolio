@@ -1,11 +1,10 @@
-// Import necessary modules
 import express from "express";
 import cors from "cors";
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
+
 dotenv.config();
 
-// Create Express app
 const app = express();
 const port = 3000;
 
@@ -13,15 +12,15 @@ app.use(cors());
 
 const gmailPassword = process.env.GMAIL_PASSWORD;
 
-// Middleware to parse incoming JSON requests
+
 app.use(express.json());
 
-// Define route for handling form submissions
+
 app.post("/submit-form", (req, res) => {
-  // Extract form data from request body
+
   const { name, email, message } = req.body;
 
-  // Create transporter object using SMTP transport
+
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -30,7 +29,7 @@ app.post("/submit-form", (req, res) => {
     },
   });
 
-  // Define email options
+
   const mailOptions = {
     from: email,
     to: "jason5donoghue@gmail.com",
@@ -38,7 +37,7 @@ app.post("/submit-form", (req, res) => {
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
   };
 
-  // Send email
+
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.error(error);
@@ -50,7 +49,7 @@ app.post("/submit-form", (req, res) => {
   });
 });
 
-// Start server
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });

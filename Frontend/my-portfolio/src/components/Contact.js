@@ -1,6 +1,6 @@
-export default function Contact() {
+const Contact = () => {
   return (
-    <div class="section-plum">
+    <div className="section-plum">
       <section id="contact">
         <h3>Contact Me</h3>
         <p>
@@ -8,7 +8,7 @@ export default function Contact() {
           opportunities.
         </p>
         <p>
-          <a href="mailto:jason5donoghue@gmail.com?subject=Opportunity" class="button">
+          <a href="mailto:jason5donoghue@gmail.com?subject=Opportunity" className="button">
             Email me
           </a>
         </p>
@@ -16,3 +16,5 @@ export default function Contact() {
     </div>
   );
 }
+
+export default Contact;

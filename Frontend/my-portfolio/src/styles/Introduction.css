@@ -1,0 +1,33 @@
+/* Base styling for #intro */
+#intro {
+  padding: 4rem 1rem 1rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Styling for elements within .name */
+#intro .name {
+  font-family: var(--mono);
+  font-size: 1rem;
+}
+
+.name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  font-style: italic;
+  color: var(--amethyst);
+  display: block;
+  font-weight: 300;
+  animation: fadeIn 2s ease-in-out forwards; /* Animation for the span */
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

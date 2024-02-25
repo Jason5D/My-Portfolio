@@ -1,0 +1,23 @@
+form {
+  margin: 0;
+  background-color: var(--palatinate);
+  font-family: var(--mono);
+  color: var(--white);
+}
+
+form h3 {
+  margin-top: 2rem;
+  color: var(--white)
+}
+
+form button {
+  margin-bottom: 2rem;
+}
+
+.form-control {
+  background-color: var(--white);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--picton)
+}
