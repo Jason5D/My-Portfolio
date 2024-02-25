@@ -22,11 +22,11 @@ nav li:first-child {
 }
 nav [class*="fa-"] {
   font-size: 150%;
-  color: var(--aqua);
+  color: var(--amethyst);
 }
 nav h1 [class*="fa-"] {
   font-size: 100%;
-  color: var(--aqua);
+  color: var(--amethyst);
   padding-right: 0.5rem;
 }
 nav a {
@@ -36,7 +36,7 @@ nav a {
 }
 nav a:hover,
 nav [class*="fa-"]:hover {
-  color: var(--magenta);
+  color: var(--picton);
 }
 
 @media (min-width: 850px) {

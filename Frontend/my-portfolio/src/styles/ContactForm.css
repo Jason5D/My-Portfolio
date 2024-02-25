@@ -1,13 +1,13 @@
 form {
   margin: 0;
-  background-color: var(--plum);
+  background-color: var(--palatinate);
   font-family: var(--mono);
   color: var(--white);
 }
 
 form h3 {
   margin-top: 2rem;
-  color: var(--hotmag)
+  color: var(--white)
 }
 
 form button {
@@ -19,5 +19,5 @@ form button {
 }
 
 .formheader {
-  color: var(--magenta)
+  color: var(--azure)
 }

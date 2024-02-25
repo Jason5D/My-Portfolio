@@ -8,7 +8,7 @@
 }
 
 #projects h3 {
-  color: var(--aqua);
+  color: var(--amethyst);
 }
 
 #projects h4 {
@@ -38,8 +38,8 @@
 
 #projects img {
   margin: 2rem 0 4rem 0;
-  border-left: 1px solid var(--aqua);
-  border-top: 1px solid var(--aqua);
+  border-left: 1px solid var(--amethyst);
+  border-top: 1px solid var(--amethyst);
   border-radius: 25px;
   padding: 1rem;
 }

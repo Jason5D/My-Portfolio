@@ -1,12 +1,12 @@
 .counters {
   padding: 3rem 2rem;
-  color: var(--aqua);
+  color: var(--amethyst);
   text-align: center;
   font-family: var(--mono);
 }
 
 .counters span {
-  color: var(--magenta)
+  color: var(--picton)
 }
 
 .counters > div {

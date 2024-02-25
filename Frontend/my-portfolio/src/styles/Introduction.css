@@ -1,5 +1,6 @@
+/* Base styling for #intro */
 #intro {
-  padding: 4rem 1rem 4rem 1rem;
+  padding: 4rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -9,6 +10,7 @@
   line-height: 1.5;
 }
 
+/* Styling for elements within .name */
 #intro .name {
   font-family: var(--mono);
   font-size: 1rem;
@@ -18,31 +20,14 @@
   font-family: var(--sans);
   font-size: 4rem;
   font-style: italic;
-  color: var(--aqua);
+  color: var(--amethyst);
   display: block;
   font-weight: 300;
-  /* Animation for fading in */
-  animation: fadeIn 2s ease-in-out forwards;
+  animation: fadeIn 2s ease-in-out forwards; /* Animation for the span */
 }
 
-/* Animation for a simple fade-in effect */
+/* Keyframes for fadeIn animation */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Additional animation for a simplified pixelate-to-clear effect */
-@keyframes pixelateToClear {
-  0% {
-    filter: blur(5px); /* Start more pixelated */
-    transform: scale(0.9); /* Optionally start smaller */
-  }
-  100% {
-    filter: blur(0px); /* End clear */
-    transform: scale(1); /* End at normal size */
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

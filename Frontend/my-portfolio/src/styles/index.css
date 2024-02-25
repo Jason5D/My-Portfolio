@@ -1,10 +1,10 @@
 :root {
   --black: #171321;
   --dkblue: #062840;
-  --plum: #5B125E;
-  --hotmag: #1783FF;
-  --magenta: #10ABE3;
-  --aqua: #AF62BD;
+  --palatinate: #5B125E;
+  --azure: #1783FF;
+  --picton: #10ABE3;
+  --amethyst: #AF62BD;
   --white: #f7f8fa;
   --font-size: 1.3rem;
   --mono: "Oxygen mono", monspace;
@@ -37,11 +37,11 @@ h4 {
 }
 
 a {
-  color: var(--magenta);
+  color: var(--picton);
 }
 
 a:hover {
-  color: var(--hotmag);
+  color: var(--azure);
   text-decoration: none;
 }
 
@@ -51,8 +51,8 @@ img {
 
 /* background color divs */
 
-.section-plum {
-  background-color: var(--plum);
+.section-palatinate {
+  background-color: var(--palatinate);
 }
 .section-dkblue {
   background-color: var(--dkblue);
@@ -61,8 +61,8 @@ img {
 .gradient {
   background: linear-gradient(
     90deg,
-    rgba(255, 23, 228, 1) 0%,
-    rgba(134, 251, 251, 1) 100%
+    rgba(139, 0, 0, 1) 0%, 
+  rgba(0, 0, 255, 1) 100%
   );
   height: 2px;
 }
@@ -70,7 +70,7 @@ img {
 /* Button style */
 
 .button {
-  background-color: var(--magenta);
+  background-color: var(--picton);
   color: var(--white);
   padding: 0.5rem;
   border-radius: 5px;
@@ -79,7 +79,7 @@ img {
 }
 .button:hover {
   color: var(--white);
-  background-color: var(--hotmag);
+  background-color: var(--azure);
 }
 
 
@@ -101,11 +101,11 @@ textarea {
   padding: 0.5rem;
   font-size: 1rem;
   border-radius: 5px;
-  border: 1px solid var(--aqua);
+  border: 1px solid var(--amethyst);
 }
 
 input[type="submit"] {
-  background-color: var(--magenta);
+  background-color: var(--picton);
   color: var(--white);
   padding: 0.5rem;
   border-radius: 5px;
@@ -117,7 +117,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   color: var(--white);
-  background-color: var(--hotmag);
+  background-color: var(--azure);
 }
 
 /* Resume section */
@@ -126,7 +126,7 @@ input[type="submit"]:hover {
   text-align: center;
   padding: 2rem 1rem;
   font-family: var(--oxygen);
-  color: var(--aqua);
+  color: var(--amethyst);
 }
 
 .download {
@@ -135,7 +135,7 @@ input[type="submit"]:hover {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3rem;
-  background-color: var(--magenta);
+  background-color: var(--picton);
   color: var(--white);
   padding: 0.5rem;
   border-radius: 5px;
@@ -144,7 +144,7 @@ input[type="submit"]:hover {
 }
 .download:hover {
   color: var(--white);
-  background-color: var(--hotmag);
+  background-color: var(--azure);
 }
 
 #resume {

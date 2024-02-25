@@ -4,10 +4,10 @@ const Introduction = () => {
   return (
     <section id="intro">
       <p className="name">
-        Hello and welcome! <span>Jason Donoghue.</span>
+        Hello and welcome! My name is...<span>Jason Donoghue.</span>
       </p>
 
-      <h2>Elevating your online presence with cutting-edge code.</h2>
+      <h2>and I'm elevating your online presence with cutting-edge code.</h2>
 
     
 
