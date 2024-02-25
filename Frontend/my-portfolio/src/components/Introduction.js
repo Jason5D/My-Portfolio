@@ -1,4 +1,4 @@
-export default function Introduction() {
+const Introduction = () => {
   return (
     <section id="intro">
       <p class="name">
@@ -18,3 +18,5 @@ export default function Introduction() {
     </section>
   );
 }
+
+export default Introduction;

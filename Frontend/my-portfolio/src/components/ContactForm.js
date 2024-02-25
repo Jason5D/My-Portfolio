@@ -2,22 +2,22 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-export default function ContactForm() {
-  // State variables to store form data
+const ContactForm = () => {
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
   axios.defaults.baseURL = "http://localhost:3000";
 
-  // Function to handle form submission
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Make POST request to Express server
+
       await axios.post("/submit-form", { name, email, message });
       alert("Form submitted successfully!");
-      // Clear form fields
+  
       setName("");
       setEmail("");
       setMessage("");
@@ -69,3 +69,5 @@ export default function ContactForm() {
     </div>
   );
 }
+
+export default ContactForm;

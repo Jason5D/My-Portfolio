@@ -1,6 +1,7 @@
+import "./styles/Navbar.css";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+const Navbar = () => {
   return (
     <nav>
       <ul>
@@ -13,13 +14,21 @@ export default function Navbar() {
           </h1>
         </li>
         <li>
-          <Link to="/">Projects</Link>
+          <Link to="/projects">Projects</Link>
         </li>
         <li>
           <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/resume" className="button">
+            Resume
+          </Link>
+        </li>
+        <li>
+          <a href="mailto:jason5donoghue@gmail.com?subject=Contact">
+            <span className="fa-solid fa-envelope" aria-hidden="true"></span>
+            <span className="sr-only">Email me</span>
+          </a>
         </li>
         <li>
           <a
@@ -37,10 +46,10 @@ export default function Navbar() {
             <span className="sr-only">Github</span>
           </a>
         </li>
-        <li>
-            <Link to="/resume" className="button">Resume</Link>
-        </li>
       </ul>
     </nav>
   );
 }
+
+export default Navbar;
+

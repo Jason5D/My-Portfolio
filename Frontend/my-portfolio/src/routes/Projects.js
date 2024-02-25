@@ -1,4 +1,4 @@
-export default function Projects() {
+const Projects = () => {
   return (
     <div class="section-dkblue">
       <section id="projects">
@@ -55,3 +55,5 @@ export default function Projects() {
     </div>
   );
 }
+
+export default Projects;

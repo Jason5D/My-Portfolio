@@ -1,4 +1,4 @@
-export default function Footer() {
+const Footer = () => {
   return (
     <footer>
       <h2>Jason Donoghue &middot; Developer</h2>
@@ -32,3 +32,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;

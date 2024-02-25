@@ -1,4 +1,4 @@
-export default function Contact() {
+const Contact = () => {
   return (
     <div class="section-plum">
       <section id="contact">
@@ -16,3 +16,5 @@ export default function Contact() {
     </div>
   );
 }
+
+export default Contact;

@@ -69,7 +69,7 @@ img {
 
 /* Navbar */
 
-nav {
+/* nav {
   font-family: var(--mono);
   font-size: 80%;
   padding: 1rem;
@@ -108,7 +108,7 @@ nav a {
 nav a:hover,
 nav [class*="fa-"]:hover {
   color: var(--magenta);
-}
+} */
 
 /* Button style */
 

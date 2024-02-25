@@ -1,7 +1,7 @@
 import myface from "../content/myface.jpeg";
 import mycat from "../content/mycat.jpeg";
 
-export default function AboutMe() {
+const AboutMe =() => {
   return (
     <div class="section-dkblue">
       <section id="projects">
@@ -62,3 +62,5 @@ export default function AboutMe() {
     </div>
   );
 }
+
+export default AboutMe;
