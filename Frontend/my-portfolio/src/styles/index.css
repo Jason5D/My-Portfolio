@@ -230,31 +230,6 @@ nav [class*="fa-"]:hover {
   }
 }
 
-
-
-/* .counters { */
-  /* display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around; 
-  align-items: center;
-  font-family: var(--mono);
-  color: var(--aqua); */
-/* } */
-
-/* .meetups {
-  text-align: center;
-}
-
-.hackathons {
-  text-align: center;
-}
-
-.counters span {
-  font-size: 4rem;
-} */
-
-
-
 /* Projects section */
 
 #projects {
@@ -371,9 +346,8 @@ footer ul {
   font-size: 3rem;
 }
 
-/* Style the contact form so it is in a similar style to the About page */
+/* Contact Form */
 
-/* Path: Frontend/my-portfolio/src/styles/contact.css */
 form {
   display: flex;
   flex-flow: column wrap;
@@ -405,6 +379,70 @@ input[type="submit"] {
 input[type="submit"]:hover {
   color: var(--white);
   background-color: var(--hotmag);
+}
+
+/* Resume section */
+
+#resumeheader {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: var(--oxygen);
+  color: var(--aqua);
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  background-color: var(--magenta);
+  color: var(--white);
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: var(--mono);
+  text-decoration: none;
+}
+.download:hover {
+  color: var(--white);
+  background-color: var(--hotmag);
+}
+
+#resume {
+  padding: 4rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#resume p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#resume h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+#resume h3 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+#resume h4 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 1rem;
+}
+
+#resume ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+#resume li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 
