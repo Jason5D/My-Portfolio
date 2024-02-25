@@ -15,7 +15,7 @@ const Projects = () => {
               on. It can be as long as you need it to be but should at least be
               a few sentences long. Be sure to include specific links anywhere
               on the description. A link looks like
-              <a href="https://studyosaurus.netlify.app/">this</a>.
+              <a href="https://studyosaurus.netlify.app/" target="_blank" rel="noreferrer">this</a>.
             </p>
             <h4>Technologies used include:</h4>
             <ul>
@@ -32,14 +32,14 @@ const Projects = () => {
         <article className="reverse">
           <div className="text">
             <h4>Latest Project</h4>
-            <h3>Studyosaurus</h3>
+            <h3>Wise Wallet Kitchen</h3>
             <p className="blackbox">
               Description of the project. This should be faily concise while
               also describing the key components that you developed or worked
               on. It can be as long as you need it to be but should at least be
               a few sentences long. Be sure to include specific links anywhere
               on the description. A link looks like
-              <a href="https://studyosaurus.netlify.app/">this</a>.
+              <a href="https://wisewalletkitchen.netlify.app/">this</a>.
             </p>
             <h4>Technologies used include:</h4>
             <ul>

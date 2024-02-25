@@ -7,7 +7,7 @@ form {
 
 form h3 {
   margin-top: 2rem;
-  color: var(--aqua)
+  color: var(--hotmag)
 }
 
 form button {
@@ -16,4 +16,8 @@ form button {
 
 .form-control {
   background-color: var(--white);
+}
+
+.formheader {
+  color: var(--magenta)
 }

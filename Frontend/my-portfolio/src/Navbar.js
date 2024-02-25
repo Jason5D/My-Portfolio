@@ -8,7 +8,6 @@ const Navbar = () => {
         <li>
           <h1>
             <Link to="/">
-              <span className="fa-solid fa-frog" aria-hidden="true"></span>
               <span>Jason Donoghue</span>
             </Link>
           </h1>

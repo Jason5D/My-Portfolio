@@ -62,7 +62,7 @@ const ContactForm = () => {
       <form onSubmit={handleSubmit}>
         <h3>Contact me for questions or opportunities...</h3>
         <div className="name">
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name" className="formheader">Name</label>
           <input
             type="text"
             className="form-control"
@@ -73,7 +73,7 @@ const ContactForm = () => {
           {errors.name && <div className="error">{errors.name}</div>} {/* Display name error */}
         </div>
         <div className="form-group">
-          <label htmlFor="email">Email address</label>
+          <label htmlFor="email" className="formheader">Email address</label>
           <input
             type="email"
             className="form-control"
@@ -84,7 +84,7 @@ const ContactForm = () => {
           {errors.email && <div className="error">{errors.email}</div>} {/* Display email error */}
         </div>
         <div className="form-group">
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message" className="formheader">Message</label>
           <textarea
             className="form-control"
             id="message"
