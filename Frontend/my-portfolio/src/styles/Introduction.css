@@ -1,6 +1,6 @@
 /* Base styling for #intro */
 #intro {
-  padding: 4rem 1rem;
+  padding: 4rem 1rem 1rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }

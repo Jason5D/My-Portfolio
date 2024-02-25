@@ -18,6 +18,6 @@ form button {
   background-color: var(--white);
 }
 
-.formheader {
-  color: var(--azure)
+input::placeholder, textarea::placeholder {
+  color: var(--picton)
 }

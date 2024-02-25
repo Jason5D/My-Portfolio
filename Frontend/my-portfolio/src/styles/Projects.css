@@ -7,22 +7,34 @@
   margin-bottom: calc(2.5rem * 1.5);
 }
 
-#projects h3 {
-  color: var(--amethyst);
+#projects a {
+  font-size: 2.2rem;
+  color: var(--picton);
+  text-decoration: none;
+}
+
+#projects a:hover {
+  color: var(--azure);
+
 }
 
 #projects h4 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: var(--mono);
 }
 
 .blackbox {
-  background-color: var(--black);
+  background-color: var(--dkblue);
   padding: 1rem;
   border-radius: 10px;
   color: var(--white);
   font-size: 1rem;
   line-height: 1.5;
+  transition: transform 0.3s ease-in-out;
+}
+
+.blackbox:hover {
+  transform: scale(1.3);
 }
 
 #projects ul {
@@ -33,15 +45,19 @@
   flex-flow: row wrap;
   justify-content: flex-start;
   gap: 1rem;
-  font-size: 1rem;
+  font-size: 1.8rem;
 }
 
 #projects img {
   margin: 2rem 0 4rem 0;
-  border-left: 1px solid var(--amethyst);
-  border-top: 1px solid var(--amethyst);
+  
   border-radius: 25px;
   padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+#projects img:hover {
+  transform: scale(1.4);
 }
 
 @media (min-width: 800px) {
@@ -66,6 +82,7 @@
   }
   #projects ul {
     justify-content: flex-end;
+    color: var(--picton)
   }
   #projects .reverse .text {
     grid-column: 1/7;
@@ -78,5 +95,6 @@
   }
   #projects .reverse ul {
     justify-content: flex-start;
+    color: var(--picton)
   }
 }
