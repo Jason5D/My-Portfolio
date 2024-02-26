@@ -8,6 +8,35 @@ return (
       Experience
     </h2>
     <h3>
+      Software Engineering Bootcamp
+    </h3>
+    <h4>
+      School of Code, Birmingham, United Kingdom (Completion Date: July 2023)
+    </h4>
+    <ul>
+      <li>
+      Completed an intensive software engineering boot camp focused on full-stack web development.
+      </li>
+      <li>
+      Acquired practical skills in front-end technologies such as HTML, CSS, and JavaScript, along with modern frameworks like React.
+      </li>
+      <li>
+      Gained proficiency in back-end development using Node.js and Express.
+      </li>
+      <li>
+      Developed a solid understanding of database management with SQL and MongoDB.
+      </li>
+      <li>
+      Collaborated on team projects, applying agile methodologies and version control with Git.
+      </li>
+      <li>
+      Explored software testing techniques and practices to ensure code quality and reliability.
+      </li>
+      <li>
+      Participated in regular code reviews and feedback sessions to enhance coding skills and best practices.
+      </li>
+    </ul>
+    <h3>
       IT Support Engineer
     </h3>
     <h4>
@@ -90,35 +119,7 @@ return (
     <h2>
       Education
     </h2>
-    <h3>
-      Software Engineering Bootcamp
-    </h3>
-    <h4>
-      School of Code, Birmingham, United Kingdom (Completion Date: July 2023)
-    </h4>
-    <ul>
-      <li>
-      Completed an intensive software engineering boot camp focused on full-stack web development.
-      </li>
-      <li>
-      Acquired practical skills in front-end technologies such as HTML, CSS, and JavaScript, along with modern frameworks like React.
-      </li>
-      <li>
-      Gained proficiency in back-end development using Node.js and Express.
-      </li>
-      <li>
-      Developed a solid understanding of database management with SQL and MongoDB.
-      </li>
-      <li>
-      Collaborated on team projects, applying agile methodologies and version control with Git.
-      </li>
-      <li>
-      Explored software testing techniques and practices to ensure code quality and reliability.
-      </li>
-      <li>
-      Participated in regular code reviews and feedback sessions to enhance coding skills and best practices.
-      </li>
-    </ul>
+  
     <h3>
     IT Technology Traineeship
     </h3>

@@ -21,7 +21,7 @@ const Counters = () => {
             if (count < target) {
               count++;
               counter.innerText = count;
-              setTimeout(updateCount, 200);
+              setTimeout(updateCount, 100);
             }
           };
 
@@ -42,20 +42,28 @@ const Counters = () => {
     <div className="counters">
       <div>
         <div className="counter">
-          <h1><span data-count="6">6</span></h1>
+          <h1>
+            <span data-count="8">8</span>
+          </h1>
           <h3>Meetups</h3>
         </div>
         <div className="counter">
-          <h1><span data-count="2">2</span></h1>
+          <h1>
+            <span data-count="3">3</span>
+          </h1>
           <h3>Hackathons</h3>
         </div>
         <div className="counter">
-          <h1><span data-count="2">2</span></h1>
+          <h1>
+            <span data-count="15">15</span>
+          </h1>
           <h3>Projects</h3>
         </div>
         <div className="counter">
-          <h1><span data-count="1">1</span></h1>
-          <h3>Deployed</h3>
+          <h1>
+            <span data-count="75">75</span>
+          </h1>
+          <h3>Contributions</h3>
         </div>
       </div>
     </div>

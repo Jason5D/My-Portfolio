@@ -1,6 +1,8 @@
+import "../styles/Contact.css"
+
 const Contact = () => {
   return (
-    <div className="section-plum">
+    <div className="section-palatinate">
       <section id="contact">
         <h3>Contact Me</h3>
         <p>
