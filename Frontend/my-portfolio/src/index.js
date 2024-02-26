@@ -6,7 +6,7 @@ import { Routes } from "react-router-dom";
 import Navbar from "./Navbar.js";
 
 import App from "./routes/App.js";
-import About from "./routes/About.js";
+// import About from "./routes/About.js";
 import Footer from "./Footer.js"// Import necessary modules
 import Resume from "./components/Resume.js";
 import Projects from "./routes/Projects.js";
@@ -19,7 +19,7 @@ root.render(
       <div className="gradient"></div>
       <Routes>
         <Route exact path="/" element={<App />} />
-        <Route path="/about" element={<About />} />
+        {/* <Route path="/about" element={<About />} /> */}
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
       </Routes>

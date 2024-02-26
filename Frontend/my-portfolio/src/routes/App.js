@@ -1,8 +1,8 @@
 import Introduction from "../components/Introduction.js";
 
-
 import Counters from "../components/Counters.js";
-import ContactForm from "../components/ContactForm.js";
+import Contact from "../components/Contact.js";
+// import ContactForm from "../components/ContactForm.js";
 
 const App = () => {
   return (
@@ -10,10 +10,11 @@ const App = () => {
       <Introduction />
       <Counters />
       <div className="gradient"></div>
-      <ContactForm />
+      <Contact />
+      {/* <ContactForm /> */}
       <div class="gradient"></div>
     </div>
   );
-}
+};
 
 export default App;

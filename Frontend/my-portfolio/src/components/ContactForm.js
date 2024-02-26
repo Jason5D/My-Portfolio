@@ -1,19 +1,18 @@
-import "../styles/ContactForm.css"
+import "../styles/ContactForm.css";
 import React, { useState } from "react";
 import axios from "axios";
 
 const ContactForm = () => {
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [errors, setErrors] = useState({}); // State to hold validation errors
+  const [errors, setErrors] = useState({});
 
-  axios.defaults.baseURL = "http://localhost:3000";
+  axios.defaults.baseURL = "http://localhost:3001";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (validateForm()) { // Check if the form is valid
+    if (validateForm()) {
       try {
         await axios.post("/submit-form", { name, email, message });
         alert("Form submitted successfully!");
@@ -62,7 +61,9 @@ const ContactForm = () => {
       <form onSubmit={handleSubmit}>
         <h3>Contact me for questions or opportunities...</h3>
         <div className="name">
-          <label htmlFor="name" className="sr-only">Name</label>
+          <label htmlFor="name" className="sr-only">
+            Name
+          </label>
           <input
             type="text"
             className="form-control"
@@ -71,10 +72,12 @@ const ContactForm = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          {errors.name && <div className="error">{errors.name}</div>} {/* Display name error */}
+          {errors.name && <div className="error">{errors.name}</div>}{" "}
         </div>
         <div className="form-group">
-          <label htmlFor="email" className="sr-only">Email address</label>
+          <label htmlFor="email" className="sr-only">
+            Email address
+          </label>
           <input
             type="email"
             className="form-control"
@@ -83,10 +86,12 @@ const ContactForm = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          {errors.email && <div className="error">{errors.email}</div>} {/* Display email error */}
+          {errors.email && <div className="error">{errors.email}</div>}{" "}
         </div>
         <div className="form-group">
-          <label htmlFor="message" className="sr-only">Message</label>
+          <label htmlFor="message" className="sr-only">
+            Message
+          </label>
           <textarea
             className="form-control"
             id="message"
@@ -95,7 +100,7 @@ const ContactForm = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
-          {errors.message && <div className="error">{errors.message}</div>} {/* Display message error */}
+          {errors.message && <div className="error">{errors.message}</div>}{" "}
         </div>
         <button type="submit" className="button">
           Send
@@ -103,6 +108,6 @@ const ContactForm = () => {
       </form>
     </div>
   );
-}
+};
 
 export default ContactForm;
