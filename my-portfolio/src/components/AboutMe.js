@@ -1,15 +1,16 @@
+import "../styles/AboutMe.css"
 import myface from "../content/myface.jpeg";
 import mycat from "../content/mycat.jpeg";
 
-const AboutMe =() => {
+const AboutMe = () => {
   return (
     <div className="section-dkblue">
-      <section id="projects">
+      <section id="about">
         <h2>Jason Donoghue</h2>
         <article>
           <div className="text">
             <h4>Just the Highlights</h4>
-            <h3>Studyosaurus</h3>
+
             <p className="blackbox">
               Proficient junior software engineer with experience of designing
               developing and implementing software applications. Utilising
@@ -27,40 +28,39 @@ const AboutMe =() => {
             </p>
             <h4>My favourite technologies include:</h4>
             <ul>
-              <li>HTML</li>
+              <li>JavaSript</li>
               <li>CSS</li>
-              <li>SVG</li>
+              <li>Python</li>
             </ul>
           </div>
-          <img
-            src={myface}
-            alt="My face"
-          />
+          <img src={myface} alt="My face" />
         </article>
         <article className="reverse">
           <div className="text">
             <h4>My about me</h4>
-            <h3>My Cat</h3>
             <p class="blackbox">
-              This beautiful cats name is Poppy. She lives with me and supports
-              me through all the difficult points. Any time I'm stuck and few
-              strokes and a belly rub and the answer just comes to me.
+              I've very happily lived in Brighton for 8 years now after moving
+              down from Birmingham. After spending a couple of years travelling
+              I wanted the life by the sea and all the great benefits this comes
+              with. I enjoy paddleboarding and volleyball in the summer months,
+              then enjoy nice pubs and some competitive chess in the winter.
+              Like to fancy myself as a bit of a home DJ and enjoy going for
+              long hikes with friends. I get to share my space with the queen of
+              the house Poppy, who likes nothing more than a sunbathe and belly
+              rub.
             </p>
-            <h4>Technologies used include:</h4>
+            <h4>Poppy's favourite things include:</h4>
             <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>SVG</li>
+              <li>Mice</li>
+              <li>Sun</li>
+              <li>Attention</li>
             </ul>
           </div>
-          <img
-            src={mycat}
-            alt="My cat"
-          />
+          <img src={mycat} alt="My cat" />
         </article>
       </section>
     </div>
   );
-}
+};
 
 export default AboutMe;

@@ -15,7 +15,6 @@ const Introduction = () => {
         journey is fueled by a passion for learning technology and a dream to
         create software that makes a difference.
       </p>
-<h3>In 2024 I have...</h3>
     </section>
   );
 };
