@@ -5,6 +5,7 @@ nav {
 }
 nav h1 a {
   font-family: var(--sans);
+  color: var(--picton);
 }
 nav ul {
   list-style-type: none;
