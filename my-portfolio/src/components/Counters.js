@@ -55,15 +55,15 @@ const Counters = () => {
         </div>
         <div className="counter">
           <h1>
-            <span data-count="15">15</span>
+            <span data-count="6">6</span>
           </h1>
           <h3>Projects</h3>
         </div>
         <div className="counter">
           <h1>
-            <span data-count="75">75</span>
+            <span data-count="17">17</span>
           </h1>
-          <h3>Contributions</h3>
+          <h3>Collaborations</h3>
         </div>
       </div>
     </div>
